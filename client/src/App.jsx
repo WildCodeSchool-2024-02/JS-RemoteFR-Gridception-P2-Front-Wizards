@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
@@ -7,7 +7,9 @@ function App() {
       <header>
         <h1 className="logo">Front Wizards</h1>
       </header>
-      <Link to="/Map" className="button">YES</Link>
+      <Link to="/Map" className="button">
+        YES
+      </Link>
     </main>
   );
 }
