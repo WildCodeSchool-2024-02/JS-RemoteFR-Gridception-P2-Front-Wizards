@@ -5,3 +5,17 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+.button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust this value to control the height of the container */
+}
+
+.button-container button {
+  margin: 0 10px; /* Adjust this value to control the spacing between buttons */
+}
