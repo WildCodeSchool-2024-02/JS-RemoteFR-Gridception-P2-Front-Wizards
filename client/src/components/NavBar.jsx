@@ -40,7 +40,7 @@ function NavBar() {
     <div className="navbar">
       <nav className="menu-burger">
         <Button onClick={toggleDrawer(true)}>MENU</Button>
-        <Drawer open={open} onClose={toggleDrawer(false)}>
+        <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
           {DrawerList}
         </Drawer>
       </nav>
