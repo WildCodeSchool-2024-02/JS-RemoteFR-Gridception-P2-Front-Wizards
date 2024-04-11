@@ -5,7 +5,11 @@ import List from "@mui/material/List";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
+
 import { useState } from "react";
+
+import logo from "../assets/logo.png";
+import "../styles/NavBar.scss";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
@@ -38,14 +42,15 @@ function NavBar() {
     </Box>
   );
   return (
-    <div className="navbar">
+   
       <nav className="button-nav">
-        <Button onClick={toggleDrawer(true)}>MENU</Button>
-        <Drawer open={open} className="menu-burger" onClose={toggleDrawer(false)} anchor="right">
+        <img src={logo} alt="logo" />
+        <Button id="menu-burger" onClick={toggleDrawer(true)}>&#9776;</Button>
+        <Drawer open={open}  onClose={toggleDrawer(false)} anchor="right">
           {DrawerList}
         </Drawer>
       </nav>
-    </div>
+
   );
 }
 
