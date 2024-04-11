@@ -1,7 +1,19 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .Bg-container {
   background-image: url(../assets/bgv5.png);
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; // a supprimer si relou pour les easter eggs ou autre.
   background-repeat: no-repeat;
 }
