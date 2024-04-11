@@ -16,12 +16,13 @@ function NavBar() {
   const DrawerList = (
     <Box
       sx={{
-        width: "50vw",
+        width: "25vw",
         height: "180vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        backgroundColor: "#E7DBC2",
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
@@ -38,9 +39,9 @@ function NavBar() {
   );
   return (
     <div className="navbar">
-      <nav className="menu-burger">
+      <nav className="button-nav">
         <Button onClick={toggleDrawer(true)}>MENU</Button>
-        <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
+        <Drawer open={open} className="menu-burger" onClose={toggleDrawer(false)} anchor="right">
           {DrawerList}
         </Drawer>
       </nav>
