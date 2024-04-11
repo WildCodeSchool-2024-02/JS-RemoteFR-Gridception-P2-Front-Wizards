@@ -1,0 +1,35 @@
+.first-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 4rem 0 10rem 0;
+
+  .castle > img {
+    width: 250px;
+    margin-top: 2rem;
+  }
+  .gryffindor > img {
+    width: 250px;
+    margin-top: 8rem;
+  }
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10rem 3rem 4rem 3rem;
+
+  .slytherin > img {
+    width: 250px;
+    margin-top: 12rem;
+    margin-bottom: 15rem;
+  }
+  .hufflepuff > img {
+    width: 250px;
+  }
+  .ravenclaw > img {
+    width: 250px;
+    margin-top: 4rem;
+  }
+}
