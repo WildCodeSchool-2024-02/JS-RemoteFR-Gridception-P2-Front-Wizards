@@ -1,11 +1,18 @@
-import "./App.scss";
 import Buttons from "./components/Buttons";
+import Header from "./components/Header";
+import "./styles/Imports.scss";
+import "./App.scss";
 
 function App() {
   return (
-    <div className="buttons_container">
-      <Buttons />
-    </div>
+    <>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Buttons />
+      </div>
+    </>
   );
 }
 

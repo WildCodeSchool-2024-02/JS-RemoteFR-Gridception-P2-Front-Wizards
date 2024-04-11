@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Buttons.scss";
 
 function Buttons() {
   const [showNoButton, setShowNoButton] = useState(true);
@@ -15,15 +14,19 @@ function Buttons() {
   };
 
   return (
-    <div
-      className="button-container"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div className="button-container">
       <button type="button" onClick={handleYesButtonClick}>
         YES
       </button>
-      {showNoButton && <button type="button">NO</button>}
+      {showNoButton && (
+        <button
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          type="button"
+        >
+          NO
+        </button>
+      )}
     </div>
   );
 }
