@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Buttons() {
   const [showNoButton, setShowNoButton] = useState(true);
@@ -16,7 +17,9 @@ function Buttons() {
   return (
     <div className="button-container">
       <button type="button" onClick={handleYesButtonClick}>
-        YES
+        <Link to="/Map" className="link-yes">
+          YES
+        </Link>
       </button>
       {showNoButton && (
         <button

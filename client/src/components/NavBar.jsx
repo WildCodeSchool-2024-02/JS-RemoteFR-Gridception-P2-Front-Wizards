@@ -7,6 +7,7 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/logo.png";
 import "../styles/NavBar.scss";
@@ -32,7 +33,15 @@ function NavBar() {
       onClick={toggleDrawer(false)}
     >
       <List>
-        {["Home", "Map", "Creators"].map((text) => (
+        {[
+          <Link to="/" key={Link}>
+            Home
+          </Link>,
+          <Link to="/Map" key={Link}>
+            Map
+          </Link>,
+          "Creators",
+        ].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemText primary={text} />
           </ListItem>
@@ -42,15 +51,15 @@ function NavBar() {
     </Box>
   );
   return (
-   
-      <nav className="button-nav">
-        <img src={logo} alt="logo" />
-        <Button id="menu-burger" onClick={toggleDrawer(true)}>&#9776;</Button>
-        <Drawer open={open}  onClose={toggleDrawer(false)} anchor="right">
-          {DrawerList}
-        </Drawer>
-      </nav>
-
+    <nav className="button-nav">
+      <img src={logo} alt="logo" />
+      <Button id="menu-burger" onClick={toggleDrawer(true)}>
+        &#9776;
+      </Button>
+      <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
+        {DrawerList}
+      </Drawer>
+    </nav>
   );
 }
 

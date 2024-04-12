@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Buttons from "./components/Buttons";
 import Header from "./components/Header";
 import "./styles/Buttons.scss";
@@ -19,4 +18,3 @@ function App() {
 }
 
 export default App;
-
