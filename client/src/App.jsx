@@ -1,6 +1,7 @@
 import Buttons from "./components/Buttons";
 import Header from "./components/Header";
-import "./styles/Imports.scss";
+import "./styles/Buttons.scss";
+import "./styles/Header.scss";
 import "./App.scss";
 
 function App() {
