@@ -1,0 +1,27 @@
+.button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.button-container button {
+  margin: 0 150px; /* Adjust this value to control the spacing between buttons */
+  border: 2px solid #390000;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  cursor: pointer; /* cursor style */
+  background-color: #390000;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.button:hover {
+  background-color: #4caf50;
+}
