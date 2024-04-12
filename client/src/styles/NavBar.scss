@@ -1,19 +1,21 @@
-
 .button-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #menu-burger {
-color:black;
+  color: black;
 
-font-size: 2rem;
+  font-size: 2rem;
 }
 
 .button-nav > img {
-    width:100px;
-    height:auto;
+  width: 100px;
+  height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
