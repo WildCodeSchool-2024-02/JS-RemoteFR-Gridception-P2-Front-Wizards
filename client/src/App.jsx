@@ -1,16 +1,23 @@
+
 import { Link } from "react-router-dom";
+
+import Buttons from "./components/Buttons";
+import Header from "./components/Header";
+import "./styles/Buttons.scss";
+import "./styles/Header.scss";
+
 import "./App.scss";
 
 function App() {
   return (
-    <main className="container-home">
-      <header>
-        <h1 className="logo">Front Wizards</h1>
-      </header>
-      <Link to="/Map" className="button">
-        YES
-      </Link>
-    </main>
+    <>
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Buttons />
+      </div>
+    </>
   );
 }
 
