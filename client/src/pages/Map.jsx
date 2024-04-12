@@ -9,6 +9,6 @@ function Map() {
       <Banner />
     </div>
   );
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                          
 
 export default Map;
