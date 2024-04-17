@@ -9,6 +9,8 @@ import Footprint from "./Footprint";
 import Footprint2 from "./Footprint2";
 import Footprint3 from "./Footprint3";
 import Footprint4 from "./Footprint4";
+import Footprint5 from "./Footprint5";
+import Footprint6 from "./Footprint6";
 
 import "../styles/Banner.scss";
 
@@ -39,10 +41,12 @@ function Banner() {
         </article>
         <Footprint4 />
       </section>
+      <Footprint5 />
       <section className="third-line">
         <article className="elixirs">
           <img src={elixirs} alt="elixirs-informations" />
         </article>
+        <Footprint6 />
         <article className="spells">
           <img src={spells} alt="spells-informations" />
         </article>
