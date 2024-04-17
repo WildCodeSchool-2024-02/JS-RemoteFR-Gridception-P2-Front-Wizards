@@ -4,11 +4,11 @@
   justify-content: space-evenly;
   margin: 4rem 0 10rem 0;
 
-  .castle > img {
+  .castle > button > img {
     width: 400px;
     margin-top: 2rem;
   }
-  .gryffindor > img {
+  .gryffindor > button > img {
     width: 400px;
     margin-top: 15rem;
   }
@@ -20,15 +20,15 @@
   justify-content: space-between;
   margin: 10rem 3rem 4rem 3rem;
 
-  .slytherin > img {
+  .slytherin > button > img {
     width: 400px;
     margin-top: 25rem;
   }
-  .hufflepuff > img {
+  .hufflepuff > button > img {
     width: 400px;
     margin-top: 10rem;
   }
-  .ravenclaw > img {
+  .ravenclaw > button > img {
     width: 400px;
     margin-top: 2rem;
   }
@@ -40,12 +40,12 @@
   justify-content: space-between;
   margin: 10rem 3rem 4rem 3rem;
 
-  .elixirs > img {
+  .elixirs > button > img {
     width: 400px;
     margin-left: 20rem;
   }
 
-  .spells > img {
+  .spells > button > img {
     width: 400px;
     margin-top: 10rem;
     margin-right: 15rem;
@@ -66,6 +66,9 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+.modal h1 {
+  font-size: 1.5rem;
+}
 .modal p {
   text-align: center;
   font-size: 1.2rem;
@@ -84,14 +87,20 @@ button {
   background-color: #ccc;
 }
 
-.modal button {
+.modal .fermer {
   align-self: flex-end;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .modal-click {
   background: none;
   border: none;
-  border-radius: none;
+  border-radius: 40%;
   box-shadow: none;
+}
+
+.modal > .random {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
 }
