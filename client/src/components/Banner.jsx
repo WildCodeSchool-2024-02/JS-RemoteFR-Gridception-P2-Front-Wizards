@@ -66,7 +66,7 @@ function Banner() {
                 &#10005;
               </button>
               <h1>Hogwart Castle</h1>
-              <h2>Description</h2>
+              <h2 className="marg-castle">Description :</h2>
               <p>
                 Hogwarts is a large, seven-storey castle, with numerous towers,
                 staircases and deep dungeons. The castle was built by Godric
@@ -96,7 +96,7 @@ function Banner() {
               </button>
               <h1>{houses[0]?.name}</h1>
               <h2>Creator : {houses[0]?.founder}</h2>
-              <h3>Descritpion</h3>
+              <h3>Descritpion :</h3>
               <p>
                 Gryffindor lived in the plains village of Godric's Hollow, and
                 was the greatest duelist of his time. The Gryffindor emblem is
@@ -127,7 +127,7 @@ function Banner() {
               </button>
               <h1>{houses[3]?.name}</h1>
               <h2>Creator : {houses[3]?.founder}</h2>
-              <h3>Description</h3>
+              <h3>Description :</h3>
               <p>
                 The house is named after Salazar Slytherin, one of the school's
                 four founders. After its foundation, Salazar Slytherin
@@ -158,7 +158,7 @@ function Banner() {
               </button>
               <h1>{houses[2]?.name}</h1>
               <h2>Creator : {houses[2]?.founder}</h2>
-              <h3>Description</h3>
+              <h3>Description :</h3>
               <p>
                 Students belonging to this house are known to be loyal, patient,
                 kind, modest, hard-working, fair-play, persevering, with a sense
@@ -194,7 +194,7 @@ function Banner() {
               </button>
               <h1>{houses[1]?.name}</h1>
               <h2>Creator : {houses[1]?.founder}</h2>
-              <h3>Descritpion</h3>
+              <h3>Descritpion :</h3>
               <p>
                 House Slytherin rewards learning, wisdom, wit and intellect in
                 its members. As a result, many Slytherins tend to be motivated
@@ -225,7 +225,8 @@ function Banner() {
                 &#10005;
               </button>
               <h1>{elixir[39]?.name}</h1>
-              <h2>{elixir[39]?.effect}</h2>
+              <h2 className="h-effect">Effect :</h2>
+              <p>{elixir[39]?.effect}</p>
               <h3>Ingredients :</h3>
               <ul>
                 <li>{elixir[39]?.ingredients[0].name}</li>
@@ -252,7 +253,7 @@ function Banner() {
                 &#10005;
               </button>
               <h1>{spell[23]?.name}</h1>
-              <h2>Description :</h2>
+              <h2 className="h-description">Description :</h2>
               <p>{spell[23]?.description}</p>
             </div>
           ) : (

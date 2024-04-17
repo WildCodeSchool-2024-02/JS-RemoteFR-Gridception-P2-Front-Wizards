@@ -16,13 +16,13 @@
 
 .second-line {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin: 10rem 3rem 4rem 3rem;
 
   .slytherin > button > img {
     width: 400px;
-    margin-top: 25rem;
+    margin-top: 2rem;
   }
   .hufflepuff > button > img {
     width: 400px;
@@ -30,7 +30,7 @@
   }
   .ravenclaw > button > img {
     width: 400px;
-    margin-top: 2rem;
+    margin-top: 25rem;
   }
 }
 
@@ -49,6 +49,7 @@
     width: 400px;
     margin-top: 10rem;
     margin-right: 15rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -58,21 +59,31 @@
   justify-content: start;
   align-items: center;
   margin: 0 auto;
-  max-width: 600px;
-  width: 90%;
+  max-width: 800px;
+  width: 70%;
+  height: 90%;
   border-radius: 10px;
-  padding: 25px;
-  background-color: #fff;
+  padding: 30px;
+  background-color: #e7dbc2;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.modal h1 {
+.modal h1,
+h2,
+h3 {
+  margin-bottom: 30px;
   font-size: 1.5rem;
+}
+
+.modal h1,
+h2 {
+  margin-bottom: 70px;
 }
 .modal p {
   text-align: center;
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin: 20px 0;
+  margin-bottom: 5rem;
 }
 
 button {
@@ -81,10 +92,10 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  color: #fff;
+  color: black;
   box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
   inset: -2px -2px 5px rgba(43, 42, 42, 0.6);
-  background-color: #ccc;
+  background-color: darkred;
 }
 
 .modal .fermer {
@@ -103,4 +114,10 @@ button {
   display: flex;
   justify-content: center;
   font-size: 1rem;
+}
+
+.h-effect,
+.h-description,
+.marg-castle {
+  margin: 2rem;
 }
