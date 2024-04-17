@@ -5,6 +5,7 @@ import hufflepuff from "../assets/hufflepuff.png";
 import ravenclaw from "../assets/ravenclaw.png";
 import elixirs from "../assets/elixirs.png";
 import spells from "../assets/spells.png";
+import Footprint from "./Footprint";
 
 import "../styles/Banner.scss";
 
@@ -15,6 +16,7 @@ function Banner() {
         <article className="castle">
           <img src={hogwarts} alt="Hogwarts Castle" />
         </article>
+        <Footprint />
         <article className="gryffindor">
           <img src={gryffindor} alt="Gryffindor Shield" />
         </article>
