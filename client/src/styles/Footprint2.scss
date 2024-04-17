@@ -1,62 +1,50 @@
-.footprint-container {
+.footprint2-container {
   position: absolute;
-  left: 400px;
+  left: 93rem;
   right: 0;
   margin: 0px auto;
-  height: 400px;
-  width: 800px;
 }
 
-.footprint {
+.footprint2 {
   height: 60px;
   position: absolute;
-  bottom: 10px;
-  transform: rotateZ(0deg);
+  bottom: -580px;
+  transform: rotateZ(40deg);
   left: 0px;
   animation: one 10s infinite;
   opacity: 0;
 }
 
-.footprint:nth-child(2) {
+.footprint2:nth-child(2) {
   height: 60px;
   position: absolute;
-  bottom: -10px;
-  transform: rotateZ(20deg);
-  left: 100px;
+  bottom: -650px;
+  transform: rotateZ(60deg);
+  left: 70px;
   animation: one 10s infinite;
   animation-delay: 1s;
   opacity: 0;
 }
 
-.footprint:nth-child(3) {
+.footprint2:nth-child(3) {
   height: 60px;
   position: absolute;
-  bottom: -25px;
-  transform: rotateZ(25deg);
-  left: 200px;
+  bottom: -750px;
+  transform: rotateZ(80deg);
+  left: 120px;
   animation: one 10s infinite;
   animation-delay: 2s;
   opacity: 0;
 }
 
-.footprint:nth-child(4) {
+.footprint2:nth-child(4) {
   height: 60px;
   position: absolute;
-  bottom: -60px;
-  transform: rotateZ(30deg);
-  left: 300px;
+  bottom: -850px;
+  transform: rotateZ(90deg);
+  left: 140px;
   animation: one 10s infinite;
   animation-delay: 3s;
-  opacity: 0;
-}
-.footprint:nth-child(5) {
-  height: 60px;
-  position: absolute;
-  bottom: -90px;
-  transform: rotateZ(30deg);
-  left: 400px;
-  animation: one 10s infinite;
-  animation-delay: 4s;
   opacity: 0;
 }
 

@@ -6,6 +6,7 @@ import ravenclaw from "../assets/ravenclaw.png";
 import elixirs from "../assets/elixirs.png";
 import spells from "../assets/spells.png";
 import Footprint from "./Footprint";
+import Footprint2 from "./Footprint2";
 
 import "../styles/Banner.scss";
 
@@ -20,7 +21,9 @@ function Banner() {
         <article className="gryffindor">
           <img src={gryffindor} alt="Gryffindor Shield" />
         </article>
+        <Footprint2 />
       </section>
+
       <section className="second-line">
         <article className="slytherin">
           <img src={slytherin} alt="Slytherin Shield" />
