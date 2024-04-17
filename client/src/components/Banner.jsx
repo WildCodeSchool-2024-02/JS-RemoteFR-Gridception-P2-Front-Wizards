@@ -7,6 +7,8 @@ import elixirs from "../assets/elixirs.png";
 import spells from "../assets/spells.png";
 import Footprint from "./Footprint";
 import Footprint2 from "./Footprint2";
+import Footprint3 from "./Footprint3";
+import Footprint4 from "./Footprint4";
 
 import "../styles/Banner.scss";
 
@@ -28,12 +30,14 @@ function Banner() {
         <article className="slytherin">
           <img src={slytherin} alt="Slytherin Shield" />
         </article>
+        <Footprint3 />
         <article className="hufflepuff">
           <img src={hufflepuff} alt="Hufflepuff Shield" />
         </article>
         <article className="ravenclaw">
           <img src={ravenclaw} alt=" Ravenclaw Shield" />
         </article>
+        <Footprint4 />
       </section>
       <section className="third-line">
         <article className="elixirs">

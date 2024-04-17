@@ -16,13 +16,13 @@
 
 .second-line {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin: 10rem 3rem 4rem 3rem;
 
   .slytherin > img {
     width: 400px;
-    margin-top: 25rem;
+    margin-top: 2rem;
   }
   .hufflepuff > img {
     width: 400px;
@@ -30,7 +30,8 @@
   }
   .ravenclaw > img {
     width: 400px;
-    margin-top: 2rem;
+
+    margin-top: 25rem;
   }
 }
 
