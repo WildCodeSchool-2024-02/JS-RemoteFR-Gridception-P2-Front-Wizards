@@ -10,25 +10,6 @@ import spells from "../assets/spells.png";
 
 import "../styles/Banner.scss";
 
-const sampleElixir = {
-  name: "Fergus Fungal Budge",
-  effect: "Treats ringworm, fungicide",
-  ingredients: [
-    {
-      id: "4ff5aaf2-776f-43c6-9896-c79c67dc90c5",
-      name: "Neem oil",
-    },
-    {
-      id: "846be123-c40f-4156-91f4-800305df7485",
-      name: "Jewelweed",
-    },
-    {
-      id: "a08e7390-a362-4013-b413-11b151fae20e",
-      name: "Onion juice",
-    },
-  ],
-};
-
 function Banner() {
   const [toggle1, setToggle1] = useState(false);
   const [toggle2, setToggle2] = useState(false);
@@ -39,9 +20,9 @@ function Banner() {
   const [toggle7, setToggle7] = useState(false);
 
   // const [characts, setCharacts] = useState({});
-  // const [spell, setSpell] = useState({});
+  const [spell, setSpell] = useState({});
   const [houses, setHouses] = useState({});
-  const [elixir, setElixir] = useState(sampleElixir);
+  const [elixir, setElixir] = useState({});
 
   // useEffect(() => {
   //   axios.get("https://hp-api.onrender.com/api/characters").then((results) => {
@@ -49,11 +30,11 @@ function Banner() {
   //   });
   // }, []);
 
-  // useEffect(() => {
-  //   axios.get("https://hp-api.onrender.com/api/spells").then((results) => {
-  //     setSpell(results.data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    axios.get("https://hp-api.onrender.com/api/spells").then((results) => {
+      setSpell(results.data);
+    });
+  }, []);
 
   useEffect(() => {
     axios
@@ -63,13 +44,14 @@ function Banner() {
       });
   }, []);
 
-  const getElixir = () => {
+  useEffect(() => {
     axios
       .get("https://wizard-world-api.herokuapp.com/Elixirs")
-      .then((response) => {
-        setElixir(response.data.results[0]);
+      .then((results) => {
+        setElixir(results.data);
       });
-  };
+  }, []);
+
   return (
     <>
       <section className="first-line">
@@ -83,7 +65,7 @@ function Banner() {
               >
                 &#10005;
               </button>
-              <h1>Castle Poudlard</h1>
+              <h1>Hogwart Castle</h1>
               <h2>Description</h2>
               <p>
                 Hogwarts is a large, seven-storey castle, with numerous towers,
@@ -242,17 +224,12 @@ function Banner() {
               >
                 &#10005;
               </button>
-              <h1>{elixir.name}</h1>
-              <h2>{elixir.effect}</h2>
+              <h1>{elixir[39]?.name}</h1>
+              <h2>{elixir[39]?.effect}</h2>
               <h3>Ingredients :</h3>
               <ul>
-                <li>{elixir.ingredients[0].name}</li>
-                <li>{elixir.ingredients[1].name}</li>
-                <li>{elixir.ingredients[2].name}</li>
+                <li>{elixir[39]?.ingredients[0].name}</li>
               </ul>
-              <button type="button" onClick={getElixir}>
-                Random
-              </button>
             </div>
           ) : (
             <button
@@ -274,17 +251,9 @@ function Banner() {
               >
                 &#10005;
               </button>
-              <h1>name</h1>
-              <ul>
-                <li>name</li>
-                <li>name</li>
-                <li>Age</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Placeat harum voluptatibus illo repellat odit eos unde rem
-                facere dolorem. Consequuntur.
-              </p>
+              <h1>{spell[23]?.name}</h1>
+              <h2>Description :</h2>
+              <p>{spell[23]?.description}</p>
             </div>
           ) : (
             <button
