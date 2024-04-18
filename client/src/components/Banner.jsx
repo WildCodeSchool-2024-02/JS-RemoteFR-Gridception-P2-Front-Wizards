@@ -19,16 +19,11 @@ function Banner() {
   const [toggle6, setToggle6] = useState(false);
   const [toggle7, setToggle7] = useState(false);
 
-  // const [characts, setCharacts] = useState({});
+
   const [spell, setSpell] = useState({});
   const [houses, setHouses] = useState({});
   const [elixir, setElixir] = useState({});
 
-  // useEffect(() => {
-  //   axios.get("https://hp-api.onrender.com/api/characters").then((results) => {
-  //     setCharacts(results.data);
-  //   });
-  // }, []);
 
   useEffect(() => {
     axios.get("https://hp-api.onrender.com/api/spells").then((results) => {
