@@ -7,6 +7,12 @@ import hufflepuff from "../assets/hufflepuff.png";
 import ravenclaw from "../assets/ravenclaw.png";
 import elixirs from "../assets/elixirs.png";
 import spells from "../assets/spells.png";
+import Footprint from "./Footprint";
+import Footprint2 from "./Footprint2";
+import Footprint3 from "./Footprint3";
+import Footprint4 from "./Footprint4";
+import Footprint5 from "./Footprint5";
+import Footprint6 from "./Footprint6";
 import "../styles/Banner.scss";
 
 function Banner() {
@@ -18,11 +24,9 @@ function Banner() {
   const [toggle6, setToggle6] = useState(false);
   const [toggle7, setToggle7] = useState(false);
 
-
   const [spell, setSpell] = useState({});
   const [houses, setHouses] = useState({});
   const [elixir, setElixir] = useState({});
-
 
   useEffect(() => {
     axios.get("https://hp-api.onrender.com/api/spells").then((results) => {
@@ -78,6 +82,7 @@ function Banner() {
             </button>
           )}
         </article>
+        <Footprint />
         <article className="gryffindor">
           {toggle2 ? (
             <div className="modal">
@@ -107,6 +112,7 @@ function Banner() {
             </button>
           )}
         </article>
+        <Footprint2 />
       </section>
       <section className="second-line">
         <article className="slytherin">
@@ -140,6 +146,7 @@ function Banner() {
             </button>
           )}
         </article>
+        <Footprint3 />
         <article className="hufflepuff">
           {toggle4 ? (
             <div className="modal">
@@ -206,7 +213,9 @@ function Banner() {
             </button>
           )}
         </article>
+        <Footprint4 />
       </section>
+      <Footprint5 />
       <section className="third-line">
         <article className="elixirs">
           {toggle6 ? (
@@ -236,6 +245,7 @@ function Banner() {
             </button>
           )}
         </article>
+        <Footprint6 />
         <article className="spells">
           {toggle7 ? (
             <div className="modal">
