@@ -1,0 +1,17 @@
+.creator-container {
+  width: 100vw;
+  background-image: url(../assets/bgv5.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.article-container > article > img {
+  width: 200px;
+}

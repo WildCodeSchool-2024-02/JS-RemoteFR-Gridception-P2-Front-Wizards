@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Map from "./pages/Map";
+import Creator from "./pages/Creator";
 import "./styles/imports.scss";
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/Map",
     element: <Map />,
+  },
+  {
+    path: "/creator",
+    element: <Creator />,
   },
 ]);
 
