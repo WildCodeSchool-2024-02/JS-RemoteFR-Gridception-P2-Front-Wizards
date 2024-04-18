@@ -1,0 +1,54 @@
+.first-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 4rem 0 10rem 0;
+
+  .castle > button > img {
+    width: 400px;
+    margin-top: 2rem;
+  }
+  .gryffindor > button > img {
+    width: 400px;
+    margin-top: 15rem;
+  }
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 10rem 3rem 4rem 3rem;
+
+  .slytherin > button > img {
+    width: 400px;
+    margin-top: 2rem;
+  }
+  .hufflepuff > button > img {
+    width: 400px;
+    margin-top: 10rem;
+  }
+  .ravenclaw > button > img {
+    width: 400px;
+    margin-top: 25rem;
+  }
+}
+
+.third-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10rem 3rem 4rem 3rem;
+
+  .elixirs > button > img {
+    width: 400px;
+    margin-left: 20rem;
+  }
+
+  .spells > button > img {
+    width: 400px;
+    margin-top: 10rem;
+    margin-right: 15rem;
+    margin-bottom: 10rem;
+  }
+}

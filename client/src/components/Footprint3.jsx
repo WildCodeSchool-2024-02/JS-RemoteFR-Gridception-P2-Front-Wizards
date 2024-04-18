@@ -1,5 +1,4 @@
 import footprints from "../assets/footprints.png";
-import "../styles/Footprint3.scss";
 
 function Footprint3() {
   return (
