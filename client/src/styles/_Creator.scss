@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  min-height: 100vh;
+  gap: 10rem;
 }
 .article-container > article > img {
   width: 200px;
