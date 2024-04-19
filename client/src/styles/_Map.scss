@@ -6,11 +6,14 @@ body {
   margin: 0;
 }
 #root {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .Bg-container {
+  width: 100vw;
   background-image: url(../assets/bgv5.png);
   background-size: cover;
   background-position: center center;

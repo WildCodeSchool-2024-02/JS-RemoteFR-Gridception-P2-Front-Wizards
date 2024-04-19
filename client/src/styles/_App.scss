@@ -3,11 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 
-  body {
-    background-image: url("./assets/homeBackground.png");
+  .body-container {
+    height: 100vh;
+    background-image: url("../assets/homeBackground.png");
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
   }
 }

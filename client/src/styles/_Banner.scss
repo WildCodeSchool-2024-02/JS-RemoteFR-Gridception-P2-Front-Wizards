@@ -4,11 +4,11 @@
   justify-content: space-evenly;
   margin: 4rem 0 10rem 0;
 
-  .castle > img {
+  .castle > button > img {
     width: 400px;
     margin-top: 2rem;
   }
-  .gryffindor > img {
+  .gryffindor > button > img {
     width: 400px;
     margin-top: 15rem;
   }
@@ -16,21 +16,21 @@
 
 .second-line {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin: 10rem 3rem 4rem 3rem;
 
-  .slytherin > img {
+  .slytherin > button > img {
     width: 400px;
-    margin-top: 25rem;
+    margin-top: 2rem;
   }
-  .hufflepuff > img {
+  .hufflepuff > button > img {
     width: 400px;
     margin-top: 10rem;
   }
-  .ravenclaw > img {
+  .ravenclaw > button > img {
     width: 400px;
-    margin-top: 2rem;
+    margin-top: 25rem;
   }
 }
 
@@ -40,14 +40,15 @@
   justify-content: space-between;
   margin: 10rem 3rem 4rem 3rem;
 
-  .elixirs > img {
+  .elixirs > button > img {
     width: 400px;
     margin-left: 20rem;
   }
 
-  .spells > img {
+  .spells > button > img {
     width: 400px;
     margin-top: 10rem;
     margin-right: 15rem;
+    margin-bottom: 10rem;
   }
 }
