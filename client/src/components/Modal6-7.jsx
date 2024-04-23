@@ -11,13 +11,23 @@ function Modal6() {
   const [elixir, setElixir] = useState({});
   const [spell, setSpell] = useState({});
 
-  const [randomSpell, setRandomSpell] = useState(null);
+  const [randomElixir, setRandomElixir] = useState({
+    name: "Loading...",
+    effect: "Loading...",
+    ingredients: [],
+  });
+  const [randomSpell, setRandomSpell] = useState({
+    name: "Loading...",
+    description: "Loading...",
+  });
+
   const getRandomIndex = (array) => {
     if (array.length === 0) {
       return null;
     }
     return Math.floor(Math.random() * array.length);
   };
+
   const setRandomItem = (array, setter) => {
     if (!array || array.length === 0) {
       return setter(null);
@@ -31,10 +41,6 @@ function Modal6() {
       setSpell(results.data);
     });
   }, []);
-
-  useEffect(() => {
-    setRandomItem(spell, setRandomSpell);
-  }, [spell]);
 
   useEffect(() => {
     axios
@@ -56,13 +62,25 @@ function Modal6() {
             >
               &#10005;
             </button>
-            <h1>{elixir[39]?.name}</h1>
+            <h1>{randomElixir?.name}</h1>
             <h2 className="h-effect">Effect :</h2>
-            <p>{elixir[39]?.effect}</p>
+            <p>{randomElixir?.effect}</p>
             <h3>Ingredients :</h3>
             <ul>
-              <li>{elixir[39]?.ingredients[0].name}</li>
+              {randomElixir?.ingredients?.map((ingredient, index) => (
+                <li key={index}>{ingredient.name}</li>
+              ))}
             </ul>
+            <button
+              type="button"
+              className="random-button1"
+              onClick={() => {
+                setRandomElixir(elixir[getRandomIndex(elixir)] || null);
+                setToggle6(true);
+              }}
+            >
+              Random Elixir
+            </button>
           </div>
         ) : (
           <button
@@ -90,9 +108,9 @@ function Modal6() {
             <p>{randomSpell?.description}</p>
             <button
               type="button"
-              className="random-button"
+              className="random-button2"
               onClick={() => {
-                setRandomSpell(spell[getRandomIndex(spell)]);
+                setRandomSpell(spell[getRandomIndex(spell)] || null);
                 setToggle7(true);
               }}
             >
