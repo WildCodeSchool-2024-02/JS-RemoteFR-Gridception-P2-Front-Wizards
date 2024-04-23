@@ -7,14 +7,34 @@ import Footprint6 from "./Footprint6";
 function Modal6() {
   const [toggle6, setToggle6] = useState(false);
   const [toggle7, setToggle7] = useState(false);
+
   const [elixir, setElixir] = useState({});
   const [spell, setSpell] = useState({});
+
+  const [randomSpell, setRandomSpell] = useState(null);
+  const getRandomIndex = (array) => {
+    if (array.length === 0) {
+      return null;
+    }
+    return Math.floor(Math.random() * array.length);
+  };
+  const setRandomItem = (array, setter) => {
+    if (!array || array.length === 0) {
+      return setter(null);
+    }
+    const randomIndex = getRandomIndex(array);
+    setter(array[randomIndex]);
+  };
 
   useEffect(() => {
     axios.get("https://hp-api.onrender.com/api/spells").then((results) => {
       setSpell(results.data);
     });
   }, []);
+
+  useEffect(() => {
+    setRandomItem(spell, setRandomSpell);
+  }, [spell]);
 
   useEffect(() => {
     axios
@@ -65,9 +85,19 @@ function Modal6() {
             >
               &#10005;
             </button>
-            <h1>{spell[23]?.name}</h1>
+            <h1>{randomSpell?.name}</h1>
             <h2 className="h-description">Description :</h2>
-            <p>{spell[23]?.description}</p>
+            <p>{randomSpell?.description}</p>
+            <button
+              type="button"
+              className="random-button"
+              onClick={() => {
+                setRandomSpell(spell[getRandomIndex(spell)]);
+                setToggle7(true);
+              }}
+            >
+              Random Spell
+            </button>
           </div>
         ) : (
           <button
