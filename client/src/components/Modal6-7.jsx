@@ -12,13 +12,15 @@ function Modal6() {
   const [spell, setSpell] = useState({});
 
   const [randomSpell, setRandomSpell] = useState(null);
+  const [randomElixir, setRandomElixir] = useState(null);
+
   const getRandomIndex = (array) => {
     if (array.length === 0) {
       return null;
     }
     return Math.floor(Math.random() * array.length);
   };
-  const setRandomItem = (array, setter) => {
+  const setRandomItem = useCallback((array, setter) => {
     if (!array || array.length === 0) {
       return setter(null);
     }
