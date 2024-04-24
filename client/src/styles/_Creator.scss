@@ -77,7 +77,6 @@
   max-width: 19ch;
   background-image: url(../assets/slytherinHouse.jpg);
   background-size: 410px;
-  color: white;
   border-radius: 10px;
   box-shadow:
     #390000 0px 4px 16px,
@@ -89,15 +88,33 @@
   display: flex;
   justify-content: center;
   margin: 3rem 0 3rem 0;
+  color: #e7dbc2;
+  text-shadow:
+    #8e8267 2px 2px,
+    #8e8267 -1px 1px,
+    #8e8267 -1px -1px,
+    #8e8267 1px -1px;
 }
 
 .h3-creator {
   font-size: 1rem;
   margin-bottom: 0;
+  color: #e7dbc2;
+  text-shadow:
+    #8e8267 2px 2px,
+    #8e8267 -1px 1px,
+    #8e8267 -1px -1px,
+    #8e8267 1px -1px;
 }
 
 .text-creator {
   margin: 2rem;
+  color: #e7dbc2;
+  text-shadow:
+    #8e8267 2px 2px,
+    #8e8267 -1px 1px,
+    #8e8267 -1px -1px,
+    #8e8267 1px -1px;
 }
 .footer > img {
   width: 40px;
