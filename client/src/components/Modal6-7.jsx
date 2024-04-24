@@ -72,7 +72,7 @@ function Modal6() {
                   <li key={ingredient.id}>{ingredient.name}</li>
                 ))}
             </ul>
-
+<p>test</p>
             <button
               type="button"
               className="random-button"
