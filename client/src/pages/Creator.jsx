@@ -3,52 +3,52 @@ import Amel from "../assets/amelAvatar.png";
 import Nico from "../assets/nicoAvatar.png";
 import Rachel from "../assets/rachelAvatar.png";
 import Seb from "../assets/sebAvatar.png";
+import github from "../assets/github.png";
 
 function Creator() {
   return (
     <div className="creator-container">
       <NavBar />
-      <h1>Fronts Wizards Team</h1>
+      <h1 className="title-creator">The Fronts Wizards Team</h1>
       <div className="article-container">
-        <article>
+        <article className="creator-details">
           <img src={Amel} alt="Portrait d'Amel" />
-          <section className="creator-details">
-            <h2>Amel</h2> <h3>House: </h3> <p>Gryffindor</p>
-            <h3>Favorite spell:</h3>
-            <p>Expelliarmus</p>
-          </section>
+          <h2 className="name">Amel</h2> <h3 className="h3-creator">House: </h3>{" "}
+          <p className="text-creator">Gryffindor</p>
+          <h3 className="h3-creator">Favorite spell</h3>
+          <p className="text-creator">Expelliarmus</p>
         </article>
 
-        <article>
+        <article className="creator-details">
           <img src={Nico} alt="Portrait de Nico" />
-          <section className="creator-details">
-            <h2>Nicolas</h2> <h3>House:</h3>
-            <p> Slytherin</p>
-            <h3>Favorite spell:</h3>
-            <p>Sectumsempra</p>
-          </section>
+          <h2 className="name">Nicolas</h2>{" "}
+          <h3 className="h3-creator">House</h3>
+          <p className="text-creator"> Slytherin</p>
+          <h3 className="h3-creator">Favorite spell</h3>
+          <p className="text-creator">Sectumsempra</p>
         </article>
 
-        <article>
+        <article className="creator-details">
           <img src={Rachel} alt="Portrait de Rachel" />
-          <section className="creator-details">
-            <h2>Rachel</h2> <h3>House:</h3>
-            <p>Hufflepuff</p>
-            <h3>Favorite spell:</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </section>
+          <h2 className="name">Rachel</h2> <h3 className="h3-creator">House</h3>
+          <p className="text-creator">Hufflepuff</p>
+          <h3 className="h3-creator">Favorite spell</h3>
+          <p className="text-creator">Lorem ipsum dolor sit amet.</p>
         </article>
 
-        <article>
+        <article className="creator-details">
           <img src={Seb} alt="Portrait de Seb" />
-          <section className="creator-details">
-            <h2>Sébastien</h2> <h3>House:</h3>
-            <p>Slytherin</p>
-            <h3>Favorite spell:</h3>
-            <p>Obliviate</p>
-          </section>
+          <h2 className="name">Sébastien</h2>{" "}
+          <h3 className="h3-creator">House</h3>
+          <p className="text-creator">Slytherin</p>
+          <h3 className="h3-creator">Favorite spell</h3>
+          <p className="text-creator">Obliviate</p>
         </article>
       </div>
+      <footer className="footer">
+        <img src={github} alt="logo github" />
+        <p>Created with Magic</p>
+      </footer>
     </div>
   );
 }
