@@ -6,9 +6,9 @@
   justify-content: start;
   align-items: center;
   margin: 0 auto;
-  max-width: 800px;
-  width: 70%;
-  height: 90%;
+  max-width: 600px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
   padding: 30px;
   background-color: #e7dbc2;
@@ -23,20 +23,20 @@
 .modal h1,
 h2,
 h3 {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   font-size: 1.5rem;
   font-family: "Cinzel Decorative", serif;
 }
 
 .modal h1,
 h2 {
-  margin-bottom: 70px;
+  margin-bottom: 2rem;
 }
 .modal p {
   text-align: center;
   font-size: 1.2rem;
   margin: 20px 0;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-family: "Cinzel Decorative", serif;
 }
 
@@ -50,6 +50,7 @@ button {
   box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
   inset: -2px -2px 5px rgba(43, 42, 42, 0.6);
   background-color: #390000;
+  margin-top: 1rem;
 }
 
 .modal .fermer {
