@@ -145,7 +145,6 @@ function Modal3({
   );
 }
 
-
 Modal3.propTypes = {
   activation2: PropTypes.bool.isRequired,
   activation3: PropTypes.bool.isRequired,

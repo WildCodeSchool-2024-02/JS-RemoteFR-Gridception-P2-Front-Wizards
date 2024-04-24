@@ -8,7 +8,6 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import tatoo from "../assets/tatoohp.png";
-
 import logo from "../assets/logo3.png";
 
 function NavBar() {
@@ -32,7 +31,7 @@ function NavBar() {
       onClick={toggleDrawer(false)}
     >
       <img className="tatoo" src={tatoo} alt="Death Eater tatoo" />
-      <List className="link-container">
+      <List>
         {[
           <Link to="/" key={Link}>
             Home
