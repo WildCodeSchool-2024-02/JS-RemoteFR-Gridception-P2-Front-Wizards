@@ -12,21 +12,19 @@ function Modal6() {
   const [spell, setSpell] = useState({});
 
   const [randomSpell, setRandomSpell] = useState(null);
-
-
   const getRandomIndex = (array) => {
     if (array.length === 0) {
       return null;
     }
     return Math.floor(Math.random() * array.length);
   };
-  const setRandomItem = useCallback (array, setter) => {
+  const setRandomItem = (array, setter) => {
     if (!array || array.length === 0) {
       return setter(null);
     }
     const randomIndex = getRandomIndex(array);
-    setter(array[randomIndex]);
-  };
+    return setter(array[randomIndex]);
+  }, []);
 
   useEffect(() => {
     axios.get("https://hp-api.onrender.com/api/spells").then((results) => {
@@ -36,7 +34,7 @@ function Modal6() {
 
   useEffect(() => {
     setRandomItem(spell, setRandomSpell);
-  }, [spell]);
+  }, [setRandomItem, spell]);
 
   useEffect(() => {
     axios
@@ -45,6 +43,10 @@ function Modal6() {
         setElixir(results.data);
       });
   }, []);
+
+  useEffect(() => {
+    setRandomItem(elixir, setRandomElixir);
+  }, [setRandomItem, elixir]);
 
   return (
     <section className="third-line">
@@ -58,13 +60,27 @@ function Modal6() {
             >
               &#10005;
             </button>
-            <h1>{elixir[39]?.name}</h1>
+            <h1>{randomElixir?.name}</h1>
             <h2 className="h-effect">Effect :</h2>
-            <p>{elixir[39]?.effect}</p>
+            <p>{randomElixir?.effect}</p>
             <h3>Ingredients :</h3>
             <ul>
-              <li>{elixir[39]?.ingredients[0].name}</li>
+              {randomElixir.ingredients &&
+                randomElixir.ingredients.map((ingredient) => (
+                  <li key={ingredient.id}>{ingredient.name}</li>
+                ))}
             </ul>
+
+            <button
+              type="button"
+              className="random-button"
+              onClick={() => {
+                setRandomElixir(elixir[getRandomIndex(elixir)]);
+                setToggle6(true);
+              }}
+            >
+              Random Elixir
+            </button>
           </div>
         ) : (
           <button
