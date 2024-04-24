@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import elixirs from "../assets/elixirs.png";
 import spells from "../assets/spells.png";
@@ -11,15 +11,8 @@ function Modal6() {
   const [elixir, setElixir] = useState({});
   const [spell, setSpell] = useState({});
 
-  const [randomElixir, setRandomElixir] = useState({
-    name: "Loading...",
-    effect: "Loading...",
-    ingredients: [],
-  });
-  const [randomSpell, setRandomSpell] = useState({
-    name: "Loading...",
-    description: "Loading...",
-  });
+  const [randomSpell, setRandomSpell] = useState(null);
+
 
   const getRandomIndex = (array) => {
     if (array.length === 0) {
@@ -27,8 +20,7 @@ function Modal6() {
     }
     return Math.floor(Math.random() * array.length);
   };
-
-  const setRandomItem = (array, setter) => {
+  const setRandomItem = useCallback (array, setter) => {
     if (!array || array.length === 0) {
       return setter(null);
     }
@@ -41,6 +33,10 @@ function Modal6() {
       setSpell(results.data);
     });
   }, []);
+
+  useEffect(() => {
+    setRandomItem(spell, setRandomSpell);
+  }, [spell]);
 
   useEffect(() => {
     axios
@@ -62,25 +58,13 @@ function Modal6() {
             >
               &#10005;
             </button>
-            <h1>{randomElixir?.name}</h1>
+            <h1>{elixir[39]?.name}</h1>
             <h2 className="h-effect">Effect :</h2>
-            <p>{randomElixir?.effect}</p>
+            <p>{elixir[39]?.effect}</p>
             <h3>Ingredients :</h3>
             <ul>
-              {randomElixir?.ingredients?.map((ingredient, index) => (
-                <li key={index}>{ingredient.name}</li>
-              ))}
+              <li>{elixir[39]?.ingredients[0].name}</li>
             </ul>
-            <button
-              type="button"
-              className="random-button1"
-              onClick={() => {
-                setRandomElixir(elixir[getRandomIndex(elixir)] || null);
-                setToggle6(true);
-              }}
-            >
-              Random Elixir
-            </button>
           </div>
         ) : (
           <button
@@ -108,9 +92,9 @@ function Modal6() {
             <p>{randomSpell?.description}</p>
             <button
               type="button"
-              className="random-button2"
+              className="random-button"
               onClick={() => {
-                setRandomSpell(spell[getRandomIndex(spell)] || null);
+                setRandomSpell(spell[getRandomIndex(spell)]);
                 setToggle7(true);
               }}
             >
