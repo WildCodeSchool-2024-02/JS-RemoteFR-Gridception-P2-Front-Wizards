@@ -8,7 +8,6 @@
 
 #menu-burger {
   color: black;
-
   font-size: 2rem;
 }
 
@@ -21,4 +20,18 @@ a {
   text-decoration: none;
   color: black;
   font-family: "Cinzel Decorative", serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+a:hover {
+  color: #570101;
+}
+
+.tatoo {
+  width: 250px;
+  margin-top: -250px;
 }

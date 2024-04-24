@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Divider from "@mui/material/Divider";
 import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
@@ -5,9 +7,7 @@ import List from "@mui/material/List";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import tatoo from "../assets/tatoohp.png";
 
 import logo from "../assets/logo3.png";
 
@@ -31,7 +31,8 @@ function NavBar() {
       role="presentation"
       onClick={toggleDrawer(false)}
     >
-      <List>
+      <img className="tatoo" src={tatoo} alt="Death Eater tatoo" />
+      <List className="link-container">
         {[
           <Link to="/" key={Link}>
             Home
