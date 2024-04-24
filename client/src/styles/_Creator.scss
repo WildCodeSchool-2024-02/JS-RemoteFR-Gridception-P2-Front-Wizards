@@ -5,7 +5,6 @@
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  min-height: 100vh;
   text-decoration: none;
   color: black;
   font-family: "Cinzel Decorative", serif;
@@ -26,15 +25,64 @@
 }
 
 .article-container > article > img {
-  width: 200px;
+  width: 205px;
 }
 
-.creator-details {
+.creator-amel {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   max-width: 19ch;
+  background-image: url(../assets/gryffindorHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+.creator-nico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/slytherinHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+.creator-rachel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/hufflepuffHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+.creator-seb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/slytherinHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
 }
 
 .name {
@@ -50,4 +98,15 @@
 
 .text-creator {
   margin: 2rem;
+}
+.footer > img {
+  width: 40px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
 }
