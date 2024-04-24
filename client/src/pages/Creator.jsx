@@ -12,30 +12,41 @@ function Creator() {
       <div className="article-container">
         <article>
           <img src={Amel} alt="Portrait d'Amel" />
-          <h2>Amel</h2> <h3>House : Gryffindor</h3>
-          <h3>Favorite spell</h3>
-          <p>Expelliarmus</p>
+          <section className="creator-details">
+            <h2>Amel</h2> <h3>House: </h3> <p>Gryffindor</p>
+            <h3>Favorite spell:</h3>
+            <p>Expelliarmus</p>
+          </section>
         </article>
 
         <article>
           <img src={Nico} alt="Portrait de Nico" />
-          <h2>Nicolas</h2> <h3>House : Slytherin</h3>
-          <h3>Favorite spell</h3>
-          <p>Sectumsempra</p>
+          <section className="creator-details">
+            <h2>Nicolas</h2> <h3>House:</h3>
+            <p> Slytherin</p>
+            <h3>Favorite spell:</h3>
+            <p>Sectumsempra</p>
+          </section>
         </article>
 
         <article>
           <img src={Rachel} alt="Portrait de Rachel" />
-          <h2>Rachel</h2> <h3>House : Hufflepuff</h3>
-          <h3>Favorite spell</h3>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <section className="creator-details">
+            <h2>Rachel</h2> <h3>House:</h3>
+            <p>Hufflepuff</p>
+            <h3>Favorite spell:</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </section>
         </article>
 
         <article>
           <img src={Seb} alt="Portrait de Seb" />
-          <h2>Sébastien</h2> <h3>House : Slytherin</h3>
-          <h3>Favorite spell</h3>
-          <p>Obliviate</p>
+          <section className="creator-details">
+            <h2>Sébastien</h2> <h3>House:</h3>
+            <p>Slytherin</p>
+            <h3>Favorite spell:</h3>
+            <p>Obliviate</p>
+          </section>
         </article>
       </div>
     </div>

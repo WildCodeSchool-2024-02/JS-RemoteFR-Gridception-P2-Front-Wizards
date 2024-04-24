@@ -5,15 +5,42 @@
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  text-decoration: none;
+  color: black;
+  font-family: "Cinzel Decorative", serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
 }
 
 .article-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   min-height: 100vh;
-  gap: 10rem;
+  margin: 0 3rem 0 3rem;
 }
+
 .article-container > article > img {
   width: 200px;
+  margin-left: 2rem;
+}
+
+.creator-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+p {
+  margin: 2rem;
 }
