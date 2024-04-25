@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import axios from "axios";
 import hogwarts from "../assets/hogwarts.png";
 import gryffindor from "../assets/gryffindor.png";
-import Footprint from "./Footprint";
-import Footprint2 from "./Footprint2";
+import Footprint from "./Footprints";
 
-function Modal1() {
+function Modal1({ activation, setActivation, activation2, setActivation2 }) {
   const [toggle1, setToggle1] = useState(false);
   const [toggle2, setToggle2] = useState(false);
   const [houses, setHouses] = useState({});
@@ -17,6 +17,7 @@ function Modal1() {
         setHouses(results.data);
       });
   }, []);
+
   return (
     <section className="first-line">
       <article className="castle">
@@ -25,7 +26,10 @@ function Modal1() {
             <button
               type="button"
               className="fermer"
-              onClick={() => setToggle1(false)}
+              onClick={() => {
+                setToggle1(false);
+                setActivation(true);
+              }}
             >
               &#10005;
             </button>
@@ -34,7 +38,7 @@ function Modal1() {
             <p>
               Hogwarts is a large, seven-storey castle, with numerous towers,
               staircases and deep dungeons. The castle was built by Godric
-              Gryffindor, Helga Hufflepuff, Rowena Slytherin and Salazar
+              Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar
               Slytherin.
             </p>
           </div>
@@ -48,14 +52,17 @@ function Modal1() {
           </button>
         )}
       </article>
-      <Footprint />
+      {activation ? <Footprint repetition={5} steps={1} /> : null}
       <article className="gryffindor">
         {toggle2 ? (
           <div className="modal">
             <button
               type="button"
               className="fermer"
-              onClick={() => setToggle2(false)}
+              onClick={() => {
+                setToggle2(false);
+                setActivation2(true);
+              }}
             >
               &#10005;
             </button>
@@ -72,15 +79,22 @@ function Modal1() {
           <button
             type="button"
             className="modal-click"
-            onClick={() => setToggle2(true)}
+            onClick={activation ? () => setToggle2(true) : null}
           >
             <img src={gryffindor} alt="Gryffindor Shield" />
           </button>
         )}
       </article>
-      <Footprint2 />
+      {activation2 ? <Footprint repetition={4} steps={2} /> : null}
     </section>
   );
 }
+
+Modal1.propTypes = {
+  activation: PropTypes.bool.isRequired,
+  setActivation: PropTypes.bool.isRequired,
+  activation2: PropTypes.bool.isRequired,
+  setActivation2: PropTypes.bool.isRequired,
+};
 
 export default Modal1;
