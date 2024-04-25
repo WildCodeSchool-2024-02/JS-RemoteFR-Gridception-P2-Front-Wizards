@@ -33,7 +33,7 @@ function Modal3({
       <section className="second-line">
         <article className="slytherin">
           {toggle3 ? (
-            <div className="modal">
+            <div className="modal3">
               <button
                 type="button"
                 className="fermer"
@@ -68,7 +68,7 @@ function Modal3({
         {activation3 ? <Footprint repetition={5} steps={3} /> : null}
         <article className="hufflepuff">
           {toggle4 ? (
-            <div className="modal">
+            <div className="modal4">
               <button
                 type="button"
                 className="fermer"
@@ -107,7 +107,7 @@ function Modal3({
         </article>
         <article className="ravenclaw">
           {toggle5 ? (
-            <div className="modal">
+            <div className="modal5">
               <button
                 type="button"
                 className="fermer"

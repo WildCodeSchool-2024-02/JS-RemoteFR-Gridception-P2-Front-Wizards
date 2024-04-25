@@ -22,7 +22,7 @@ function Modal1({ activation, setActivation, activation2, setActivation2 }) {
     <section className="first-line">
       <article className="castle">
         {toggle1 ? (
-          <div className="modal">
+          <div className="modal1">
             <button
               type="button"
               className="fermer"
@@ -55,7 +55,7 @@ function Modal1({ activation, setActivation, activation2, setActivation2 }) {
       {activation ? <Footprint repetition={5} steps={1} /> : null}
       <article className="gryffindor">
         {toggle2 ? (
-          <div className="modal">
+          <div className="modal2">
             <button
               type="button"
               className="fermer"
