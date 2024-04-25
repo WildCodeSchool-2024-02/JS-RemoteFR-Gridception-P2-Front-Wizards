@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Amel from "../assets/amelAvatar.png";
 import Nico from "../assets/nicoAvatar.png";
@@ -46,7 +47,13 @@ function Creator() {
         </article>
       </div>
       <footer className="footer">
-        <img src={github} alt="logo github" />
+        <Link
+          to="https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-Front-Wizards"
+          key={Link}
+          target="_blank"
+        >
+          <img src={github} alt="logo github" />
+        </Link>
         <p>Created with Magic by the Front Wizards</p>
       </footer>
     </div>

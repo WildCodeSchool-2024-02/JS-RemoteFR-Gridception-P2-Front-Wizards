@@ -90,10 +90,10 @@
   margin: 3rem 0 3rem 0;
   color: #e7dbc2;
   text-shadow:
-    #8e8267 2px 2px,
-    #8e8267 -1px 1px,
-    #8e8267 -1px -1px,
-    #8e8267 1px -1px;
+    black 2px 2px,
+    black -1px 1px,
+    black -1px -1px,
+    black 1px -1px;
 }
 
 .h3-creator {
@@ -101,20 +101,21 @@
   margin-bottom: 0;
   color: #e7dbc2;
   text-shadow:
-    #8e8267 2px 2px,
-    #8e8267 -1px 1px,
-    #8e8267 -1px -1px,
-    #8e8267 1px -1px;
+    black 2px 2px,
+    black -1px 1px,
+    black -1px -1px,
+    black 1px -1px;
 }
 
 .text-creator {
   margin: 2rem;
-  color: #e7dbc2;
+  font-weight: bolder;
+  color: black;
   text-shadow:
-    #8e8267 2px 2px,
-    #8e8267 -1px 1px,
-    #8e8267 -1px -1px,
-    #8e8267 1px -1px;
+    #e7dbc2 1px 1px,
+    #e7dbc2 -1px 1px,
+    #e7dbc2 -1px -1px,
+    #e7dbc2 1px -1px;
 }
 .footer > img {
   width: 40px;
