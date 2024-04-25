@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import axios from "axios";
 import slytherin from "../assets/slytherin.png";
 import hufflepuff from "../assets/hufflepuff.png";
 import ravenclaw from "../assets/ravenclaw.png";
-import Footprint3 from "./Footprint3";
-import Footprint4 from "./Footprint4";
-import Footprint5 from "./Footprint5";
+import Footprint from "./Footprints";
 
-function Modal3() {
+function Modal3({
+  activation2,
+  activation3,
+  setActivation3,
+  activation4,
+  setActivation4,
+  activation5,
+  setActivation5,
+}) {
   const [toggle3, setToggle3] = useState(false);
   const [toggle4, setToggle4] = useState(false);
   const [toggle5, setToggle5] = useState(false);
@@ -30,7 +37,10 @@ function Modal3() {
               <button
                 type="button"
                 className="fermer"
-                onClick={() => setToggle3(false)}
+                onClick={() => {
+                  setToggle3(false);
+                  setActivation3(true);
+                }}
               >
                 &#10005;
               </button>
@@ -49,20 +59,23 @@ function Modal3() {
             <button
               type="button"
               className="modal-click"
-              onClick={() => setToggle3(true)}
+              onClick={activation2 ? () => setToggle3(true) : null}
             >
               <img src={slytherin} alt="Slytherin Shield" />
             </button>
           )}
         </article>
-        <Footprint3 />
+        {activation3 ? <Footprint repetition={5} steps={3} /> : null}
         <article className="hufflepuff">
           {toggle4 ? (
             <div className="modal4">
               <button
                 type="button"
                 className="fermer"
-                onClick={() => setToggle4(false)}
+                onClick={() => {
+                  setToggle4(false);
+                  setActivation4(true);
+                }}
               >
                 &#10005;
               </button>
@@ -86,7 +99,7 @@ function Modal3() {
             <button
               type="button"
               className="modal-click"
-              onClick={() => setToggle4(true)}
+              onClick={activation3 ? () => setToggle4(true) : null}
             >
               <img src={hufflepuff} alt="Hufflepuff Shield" />
             </button>
@@ -98,7 +111,10 @@ function Modal3() {
               <button
                 type="button"
                 className="fermer"
-                onClick={() => setToggle5(false)}
+                onClick={() => {
+                  setToggle5(false);
+                  setActivation5(true);
+                }}
               >
                 &#10005;
               </button>
@@ -116,17 +132,29 @@ function Modal3() {
             <button
               type="button"
               className="modal-click"
-              onClick={() => setToggle5(true)}
+              onClick={activation4 ? () => setToggle5(true) : null}
             >
               <img src={ravenclaw} alt=" Ravenclaw Shield" />
             </button>
           )}
         </article>
-        <Footprint4 />
+        {activation4 ? <Footprint repetition={5} steps={4} /> : null}
       </section>
-      <Footprint5 />
+      {activation5 ? <Footprint repetition={5} steps={5} /> : null}
     </>
   );
 }
+
+Modal3.propTypes = {
+  activation2: PropTypes.bool.isRequired,
+  activation3: PropTypes.bool.isRequired,
+  setActivation3: PropTypes.bool.isRequired,
+  activation4: PropTypes.bool.isRequired,
+  setActivation4: PropTypes.bool.isRequired,
+  activation5: PropTypes.bool.isRequired,
+  setActivation5: PropTypes.bool.isRequired,
+};
+
+
 
 export default Modal3;
