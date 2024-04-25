@@ -11,12 +11,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .Bg-container {
   width: 100vw;
   background-image: url(../assets/bgv5.png);
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; // a supprimer si relou pour les easter eggs ou autre.
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }

@@ -1,0 +1,130 @@
+.creator-container {
+  width: 100vw;
+  background-image: url(../assets/bgv5.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: black;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.title-creator {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 8rem 0;
+  font-size: 3rem;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 3rem 0 3rem;
+}
+
+.article-container > article > img {
+  width: 205px;
+}
+
+.creator-amel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/gryffindorHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+.creator-nico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/slytherinHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+.creator-rachel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/hufflepuffHouse.jpg);
+  background-size: 410px;
+  color: white;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+.creator-seb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 19ch;
+  background-image: url(../assets/slytherinHouse.jpg);
+  background-size: 410px;
+  border-radius: 10px;
+  box-shadow:
+    #390000 0px 4px 16px,
+    #390000 0px 8px 24px,
+    #390000 0px 16px 56px;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 3rem 0;
+  color: #e7dbc2;
+  text-shadow:
+    black 2px 2px,
+    black -1px 1px,
+    black -1px -1px,
+    black 1px -1px;
+}
+
+.h3-creator {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #e7dbc2;
+  text-shadow:
+    black 2px 2px,
+    black -1px 1px,
+    black -1px -1px,
+    black 1px -1px;
+}
+
+.text-creator {
+  margin: 2rem;
+  font-weight: bolder;
+  color: black;
+  text-shadow:
+    #e7dbc2 1px 1px,
+    #e7dbc2 -1px 1px,
+    #e7dbc2 -1px -1px,
+    #e7dbc2 1px -1px;
+}
+.footer > img {
+  width: 40px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
