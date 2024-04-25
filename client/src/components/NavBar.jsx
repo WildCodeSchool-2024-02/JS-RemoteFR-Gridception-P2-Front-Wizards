@@ -39,7 +39,9 @@ function NavBar() {
           <Link to="/Map" key={Link}>
             Map
           </Link>,
-          "Creators",
+          <Link to="/creator" key={Link}>
+            Creator
+          </Link>,
         ].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemText primary={text} />
