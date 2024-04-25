@@ -26,7 +26,7 @@ function Modal3() {
       <section className="second-line">
         <article className="slytherin">
           {toggle3 ? (
-            <div className="modal">
+            <div className="modal3">
               <button
                 type="button"
                 className="fermer"
@@ -58,7 +58,7 @@ function Modal3() {
         <Footprint3 />
         <article className="hufflepuff">
           {toggle4 ? (
-            <div className="modal">
+            <div className="modal4">
               <button
                 type="button"
                 className="fermer"
@@ -94,7 +94,7 @@ function Modal3() {
         </article>
         <article className="ravenclaw">
           {toggle5 ? (
-            <div className="modal">
+            <div className="modal5">
               <button
                 type="button"
                 className="fermer"

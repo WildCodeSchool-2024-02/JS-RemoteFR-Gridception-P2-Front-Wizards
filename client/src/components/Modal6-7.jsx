@@ -54,7 +54,7 @@ function Modal6() {
     <section className="third-line">
       <article className="elixirs">
         {toggle6 ? (
-          <div className="modal">
+          <div className="modal6">
             <button
               type="button"
               className="fermer"
@@ -96,7 +96,7 @@ function Modal6() {
       <Footprint6 />
       <article className="spells">
         {toggle7 ? (
-          <div className="modal">
+          <div className="modal7">
             <button
               type="button"
               className="fermer"

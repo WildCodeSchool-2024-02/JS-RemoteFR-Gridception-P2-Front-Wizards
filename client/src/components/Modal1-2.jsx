@@ -21,7 +21,7 @@ function Modal1() {
     <section className="first-line">
       <article className="castle">
         {toggle1 ? (
-          <div className="modal">
+          <div className="modal1">
             <button
               type="button"
               className="fermer"
@@ -51,7 +51,7 @@ function Modal1() {
       <Footprint />
       <article className="gryffindor">
         {toggle2 ? (
-          <div className="modal">
+          <div className="modal2">
             <button
               type="button"
               className="fermer"
