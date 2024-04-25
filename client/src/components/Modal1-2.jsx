@@ -38,7 +38,7 @@ function Modal1({ activation, setActivation, activation2, setActivation2 }) {
             <p>
               Hogwarts is a large, seven-storey castle, with numerous towers,
               staircases and deep dungeons. The castle was built by Godric
-              Gryffindor, Helga Hufflepuff, Rowena Slytherin and Salazar
+              Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar
               Slytherin.
             </p>
           </div>
