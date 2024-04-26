@@ -81,6 +81,7 @@ button {
   inset: -2px -2px 5px rgba(43, 42, 42, 0.6);
   background-color: #390000;
   margin-top: 1rem;
+  cursor: url("../assets/wand3.png"), pointer !important;
 }
 
 .modal1,
@@ -102,6 +103,9 @@ button {
   border: none;
   border-radius: 40%;
   box-shadow: none;
+  img {
+    cursor: url("../assets/wand3.png"), pointer !important;
+  }
 }
 
 .modal1,
