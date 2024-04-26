@@ -73,7 +73,7 @@ function Modal6({ activation5, activation6, setActivation6 }) {
             <ul>
               {randomElixir.ingredients &&
                 randomElixir.ingredients.map((ingredient) => (
-                  <li key={ingredient.id}>{ingredient.name}</li>
+                  <li className="elixirList" key={ingredient.id}>{ingredient.name}</li>
                 ))}
             </ul>
             <button

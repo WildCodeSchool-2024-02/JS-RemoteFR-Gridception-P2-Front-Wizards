@@ -65,7 +65,7 @@ p {
 
 button {
   padding: 10px 15px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -73,7 +73,7 @@ button {
   box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
   inset: -2px -2px 5px rgba(43, 42, 42, 0.6);
   background-color: #390000;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .modal1,
@@ -86,6 +86,8 @@ button {
 .fermer {
   align-self: flex-end;
   font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .modal-click {
@@ -129,4 +131,9 @@ button {
 .h-description,
 .marg-castle {
   margin: 2rem;
+}
+
+.elixirList {
+  list-style-type: none;
+  margin-left: -3em;
 }
