@@ -6,7 +6,8 @@
 .modal4,
 .modal5,
 .modal6,
-.modal7 {
+.modal7,
+.modal-of-golden {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -33,6 +34,7 @@
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 h1,
 h2,
 h3 {
@@ -47,6 +49,7 @@ h3 {
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 h1 {
   font-size: 1.5rem;
 }
@@ -58,6 +61,7 @@ h1 {
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 p {
   text-align: center;
   font-size: 1.2rem;
@@ -86,12 +90,14 @@ button {
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 .fermer {
   align-self: flex-end;
   font-size: 1rem;
 }
 
-.modal-click {
+.modal-click,
+.modal-click-golden {
   background: none;
   border: none;
   border-radius: 40%;
@@ -128,8 +134,16 @@ button {
   margin-bottom: 10rem;
 }
 
+.modal-of-golden {
+  margin-right: 42rem;
+}
+
 .h-effect,
 .h-description,
 .marg-castle {
   margin: 2rem;
+}
+
+.goldensnitch {
+  width: 50px;
 }

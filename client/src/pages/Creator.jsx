@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import Amel from "../assets/amelAvatar.png";
@@ -6,8 +7,10 @@ import Rachel from "../assets/rachelAvatar.png";
 import Seb from "../assets/sebAvatar.png";
 import github from "../assets/github.png";
 import Test1 from "../components/Cursor";
+import goldenSnitch from "../assets/goldenSnitch.png";
 
 function Creator() {
+  const [toggleGolden, setToggleGolden] = useState(false);
   return (
     <>
       <Test1 />
@@ -52,6 +55,33 @@ function Creator() {
           </article>
         </div>
         <footer className="footer">
+          {toggleGolden ? (
+            <div className="modal-of-golden">
+              <button
+                type="button"
+                className="fermer"
+                onClick={() => {
+                  setToggleGolden(false);
+                }}
+              >
+                &#10005;
+              </button>
+              <h1>Golden Snitch</h1>
+              <p>WELL DONE, YOU GET 1000 POINTS FOR YOUR HOUSE</p>
+            </div>
+          ) : (
+            <button
+              type="button"
+              className="modal-click-golden"
+              onClick={() => setToggleGolden(true)}
+            >
+              <img
+                className="goldensnitch"
+                src={goldenSnitch}
+                alt="golden Snitch"
+              />
+            </button>
+          )}
           <Link
             to="https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-Front-Wizards"
             key={Link}
