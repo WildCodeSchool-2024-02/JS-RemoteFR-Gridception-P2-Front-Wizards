@@ -122,8 +122,8 @@ function Modal3({
               <h2>Creator : {houses[1]?.founder}</h2>
               <h3>Descritpion :</h3>
               <p>
-                House Slytherin rewards learning, wisdom, wit and intellect in
-                its members. As a result, many Slytherins tend to be motivated
+                House Ravenclaw rewards learning, wisdom, wit and intellect in
+                its members. As a result, many Ravenclaw tend to be motivated
                 and talented students. They also pride themselves on being
                 original in their ideas and methods.
               </p>
@@ -154,7 +154,5 @@ Modal3.propTypes = {
   activation5: PropTypes.bool.isRequired,
   setActivation5: PropTypes.bool.isRequired,
 };
-
-
 
 export default Modal3;
