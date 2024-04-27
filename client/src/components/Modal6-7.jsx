@@ -9,7 +9,7 @@ function Modal6({ activation5, activation6, setActivation6 }) {
   const [toggle6, setToggle6] = useState(false);
   const [toggle7, setToggle7] = useState(false);
 
-  const [elixir, setElixir] = useState({});
+  const [elixir, setElixir] = useState([]);
   const [spell, setSpell] = useState({});
 
   const [randomSpell, setRandomSpell] = useState(null);
@@ -43,7 +43,13 @@ function Modal6({ activation5, activation6, setActivation6 }) {
     axios
       .get("https://wizard-world-api.herokuapp.com/Elixirs")
       .then((results) => {
-        setElixir(results.data);
+        const filteredElixirs = results.data.filter(
+          (elixirData) =>
+            elixirData.effect &&
+            elixirData.ingredients &&
+            elixirData.ingredients.length
+        );
+        setElixir(filteredElixirs);
       });
   }, []);
 
@@ -73,7 +79,9 @@ function Modal6({ activation5, activation6, setActivation6 }) {
             <ul>
               {randomElixir.ingredients &&
                 randomElixir.ingredients.map((ingredient) => (
-                  <li className="elixirList" key={ingredient.id}>{ingredient.name}</li>
+                  <li className="elixirList" key={ingredient.id}>
+                    {ingredient.name}
+                  </li>
                 ))}
             </ul>
             <button
