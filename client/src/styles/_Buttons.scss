@@ -29,3 +29,22 @@
   margin: 0;
   font-size: 1.5rem;
 }
+
+.message-nogood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47rem;
+  color: #390000;
+  font-weight: 400;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
