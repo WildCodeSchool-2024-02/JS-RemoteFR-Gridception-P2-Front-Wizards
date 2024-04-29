@@ -27,6 +27,10 @@ a {
   justify-content: space-around;
   align-items: center;
   margin: 2rem 0 2rem 0;
+  cursor: url("../assets/wand3.png"), pointer !important;
+  img {
+    cursor: url("../assets/wand3.png"), pointer !important;
+  }
 }
 
 .tatoo {
