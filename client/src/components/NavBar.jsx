@@ -30,7 +30,9 @@ function NavBar() {
       role="presentation"
       onClick={toggleDrawer(false)}
     >
+      <div className="fade-in-image">
       <img className="tatoo" src={tatoo} alt="Death Eater tatoo" />
+      </div>
       <List>
         {[
           <Link to="/" key={Link}>
