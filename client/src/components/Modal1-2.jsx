@@ -70,9 +70,11 @@ function Modal1({ activation, setActivation, activation2, setActivation2 }) {
             <h2>Creator : {houses[0]?.founder}</h2>
             <h3>Descritpion :</h3>
             <p>
-              Gryffindor lived in the plains village of Godric's Hollow, and was
-              the greatest duelist of his time. The Gryffindor emblem is the
-              lion, considered the bravest of all creatures.
+              Gryffindor valued bravery, daring, nerve, and chivalry. Its
+              emblematic animal was the lion, its representative gemstone was
+              rubies, and its colours were scarlet and gold. Sir Nicholas de
+              Mimsy-Porpington, also known as "Nearly Headless Nick", was the
+              House Ghost. Gryffindor corresponded to the element of fire.
             </p>
           </div>
         ) : (

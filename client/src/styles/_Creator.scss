@@ -14,7 +14,19 @@
   display: flex;
   justify-content: center;
   margin: 4rem 0 8rem 0;
-  font-size: 3rem;
+  font-size: 80px;
+  color: transparent;
+  background-image: linear-gradient(black, black);
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: -1600px, 0;
+  animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .article-container {
