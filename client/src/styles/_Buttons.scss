@@ -13,6 +13,7 @@
   margin: 0 150px;
   border: 2px solid #390000;
   color: white;
+  font-size: 1.5rem;
   padding: 15px 40px;
   border-radius: 15px;
   cursor: pointer;
@@ -27,4 +28,23 @@
   color: white;
   margin: 0;
   font-size: 1.5rem;
+}
+
+.message-nogood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47rem;
+  color: #390000;
+  font-weight: 400;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

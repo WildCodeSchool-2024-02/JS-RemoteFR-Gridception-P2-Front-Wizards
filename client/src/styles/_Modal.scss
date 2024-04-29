@@ -6,14 +6,13 @@
 .modal4,
 .modal5,
 .modal6,
-.modal7 {
+.modal7,
+.modal-of-golden {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  max-width: 600px;
-  width: auto;
+  width: 500px;
   height: auto;
   border-radius: 10px;
   padding: 30px;
@@ -33,6 +32,7 @@
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 h1,
 h2,
 h3 {
@@ -40,6 +40,7 @@ h3 {
   font-size: 1rem;
   font-family: "Cinzel Decorative", serif;
 }
+
 .modal1,
 .modal2,
 .modal3,
@@ -47,6 +48,7 @@ h3 {
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 h1 {
   font-size: 1.5rem;
 }
@@ -58,17 +60,18 @@ h1 {
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 p {
   text-align: center;
   font-size: 1.2rem;
-  margin: 20px 0;
   margin-bottom: 2rem;
   font-family: "Cinzel Decorative", serif;
 }
 
-button {
+.fermer,
+.random-button {
   padding: 10px 15px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -77,6 +80,8 @@ button {
   inset: -2px -2px 5px rgba(43, 42, 42, 0.6);
   background-color: #390000;
   margin-top: 1rem;
+  cursor: url("../assets/wand3.png"), pointer !important;
+  margin-top: 4rem;
 }
 
 .modal1,
@@ -86,16 +91,23 @@ button {
 .modal5,
 .modal6,
 .modal7,
+.modal-of-golden,
 .fermer {
   align-self: flex-end;
   font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
-.modal-click {
+.modal-click,
+.modal-click-golden {
   background: none;
   border: none;
   border-radius: 40%;
   box-shadow: none;
+  img {
+    cursor: url("../assets/wand3.png"), pointer !important;
+  }
 }
 
 .modal1,
@@ -122,14 +134,28 @@ button {
 .modal6 {
   margin-left: 20rem;
 }
+
 .modal7 {
   margin-top: 10rem;
   margin-right: 15rem;
   margin-bottom: 10rem;
 }
 
+.modal-of-golden {
+  margin-right: 42rem;
+}
+
 .h-effect,
 .h-description,
 .marg-castle {
   margin: 2rem;
+}
+
+.goldensnitch {
+  width: 50px;
+}
+
+.elixirList {
+  list-style-type: none;
+  margin-left: -3em;
 }

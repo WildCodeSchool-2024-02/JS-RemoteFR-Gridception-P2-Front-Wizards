@@ -27,9 +27,26 @@ a {
   justify-content: space-around;
   align-items: center;
   margin: 2rem 0 2rem 0;
+  cursor: url("../assets/wand3.png"), pointer !important;
+  img {
+    cursor: url("../assets/wand3.png"), pointer !important;
+  }
 }
 
 .tatoo {
   width: 250px;
   margin-top: -250px;
+}
+
+.fade-in-image {
+  animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
