@@ -83,16 +83,14 @@ function Modal3({
               <h2>Creator : {houses[2]?.founder}</h2>
               <h3>Description :</h3>
               <p>
-                Students belonging to this house are known to be loyal, patient,
-                kind, modest, hard-working, fair-play, persevering, with a sense
-                of justice, sincere, tolerant, and with a love of nature.
-                Although Hufflepuff are hard-working people who have produced
-                some brilliant wizards and witches, they are not as competitive
-                as other competitive as other houses and remain modest about
-                their their achievements. Hufflepuff is thus the most inclusive
-                of the other four houses: it values hard work, dedication hard
-                work, dedication, patience, loyalty and fair play, rather than
-                any particular rather than any particular ability.
+                Hufflepuff valued hard work, dedication, patience, loyalty, and
+                fair play.Its emblematic animal was the badger, its
+                representative gemstone was yellow diamonds, and yellow and
+                black were its colours. Pomona Sprout was the Head of Hufflepuff
+                during 1991–1998, Sprout left the post of Head of Hufflepuff and
+                Herbology Professor sometime before 2017 and her successor for
+                the position of Head of Hufflepuff was currently unknown. The
+                Fat Friar was its ghost.
               </p>
             </div>
           ) : (
@@ -122,10 +120,12 @@ function Modal3({
               <h2>Creator : {houses[1]?.founder}</h2>
               <h3>Descritpion :</h3>
               <p>
-                House Ravenclaw rewards learning, wisdom, wit and intellect in
-                its members. As a result, many Ravenclaw tend to be motivated
-                and talented students. They also pride themselves on being
-                original in their ideas and methods.
+                Ravenclaw valued intelligence, knowledge, curiosity, creativity
+                and wit. Its emblematic animal was the eagle, its representative
+                gemstone was sapphires, and its colours were blue and bronze.
+                The Ravenclaw Head of House in the 1990s was Filius Flitwick.
+                The ghost of Ravenclaw was the Grey Lady, who was the daughter
+                of Rowena Ravenclaw, the House's founder.
               </p>
             </div>
           ) : (
